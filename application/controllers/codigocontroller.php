@@ -10,7 +10,7 @@ class CodigoController extends CI_Controller{
 	}
 
 	function descargasCfe(){
-		$this ->load->view('project/header');
+		$this ->load->view('cfe/header');
 		$this ->load->view('cfe/formulario');		
 	}	
 	function recibirDatos(){
@@ -25,7 +25,7 @@ class CodigoController extends CI_Controller{
 		$correo = $this->input->post('correo');
 		$this->codigocontrol_model->informacionUsuario($data,$archivos);
 		$this->codigocontrol_model->enviarCorreo($nombre,$correo,$archivos);
-		$this ->load->view('project/header');
+		$this ->load->view('cfe/header');
 	}
 }
 ?>

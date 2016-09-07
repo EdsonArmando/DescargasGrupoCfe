@@ -89,7 +89,7 @@ class CodigoControl_model extends CI_Model{
 		$mail->Host = "smtp.gmail.com";
 		$mail->Port = 465;
 		$mail->Username = "edsonguix@gmail.com";
-		$mail->Password = "**********";
+		$mail->Password = "************";
 		$mail->IsHTML(true);
 		$mail->CharSet = "text/html; charset=UTF-8;"; 	
 		$mail->setFrom = $correo;
