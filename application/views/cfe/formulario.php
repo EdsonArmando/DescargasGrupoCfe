@@ -1,22 +1,14 @@
-<!-- Versión compilada y comprimida del CSS de Bootstrap -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
-<!-- Tema opcional -->
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
-<!-- Versión compilada y comprimida del JavaScript de Bootstrap -->
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!--load bootstrap.js-->
 <nav class="navbar navbar-default" role="navigation">
-  <!-- El logotipo y el icono que despliega el menú se agrupan
-       para mostrarlos mejor en los dispositivos móviles -->
   <div class="navbar-header">
     <a class="navbar-brand" href="#">Grupo Cfe</a>
   </div>
-  <!-- Agrupar los enlaces de navegación, los formularios y cualquier
-       otro elemento que se pueda ocultar al minimizar la barra -->
   <div class="collapse navbar-collapse navbar-ex1-collapse colors">
     <ul class="nav navbar-nav">
       <li><a href="#">Inicio</a></li>	
