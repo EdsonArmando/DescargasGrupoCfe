@@ -3,6 +3,8 @@ class CodigoControl_model extends CI_Model{
 	function __construct(){
 		parent::__construct();
 		$this->load->database();
+		require_once('system/libraries/PHPMailer/class.phpmailer.php');
+		require_once('system/libraries/PHPMailer/class.smtp.php');
 	}
 	function informacionUsuario($data, $archivos){
 		$this->db->insert('informacion', array('nombre'=>$data['nombre'], 'correo'=>$data['correo'], 'telefono'=>$data['telefono'], 'archivo'=>$data['archivo']));
@@ -89,7 +91,7 @@ class CodigoControl_model extends CI_Model{
 		$mail->Host = "smtp.gmail.com";
 		$mail->Port = 465;
 		$mail->Username = "edsonguix@gmail.com";
-		$mail->Password = "************";
+		$mail->Password = "*********";
 		$mail->IsHTML(true);
 		$mail->CharSet = "text/html; charset=UTF-8;"; 	
 		$mail->setFrom = $correo;

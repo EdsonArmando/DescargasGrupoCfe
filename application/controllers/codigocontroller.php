@@ -4,8 +4,6 @@ class CodigoController extends CI_Controller{
 	function __construct(){
 		parent::__construct();
 		$this ->load->helper('form');
-		require_once('system/libraries/PHPMailer/class.phpmailer.php');
-		require_once('system/libraries/PHPMailer/class.smtp.php');
 		$this ->load->model('codigocontrol_model');
 	}
 
