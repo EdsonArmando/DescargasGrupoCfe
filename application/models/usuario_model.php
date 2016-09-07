@@ -99,8 +99,8 @@ class Usuario_Model extends CI_Model{
 		$mail->AddAddress('eguix-2010302@kinal.edu.gt');
 		$mail->Subject = 'Centro de descargas CFE';
 		$mail->AddAttachment("images/download.png");
-		$body = "". $nombre . " ha descargado el calendario tributario de ". $archivos .". ";
-		$body .= "Para poder contactar al usuario puede hacerlo por numero de telefono: ". $telefono ." O correo: ". $correo .".";
+		$body = "". $nombre . " ha descargado el calendario tributario de ". $archivos .".";
+		$body .= " Para poder contactar al usuario puede hacerlo por numero de telefono: ". $telefono ." O correo: ". $correo .".";
 		$mail->Body = $body;
  		if(!$mail->Send()) {
             $data["message"] = "Error en el envío: " . $mail->ErrorInfo;
