@@ -5,13 +5,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<nav class="navbar navbar-default" role="navigation">
+<body class="body">
+  <nav class="navbar navbar-default" role="navigation">
   <div class="navbar-header">
     <a class="navbar-brand" href="#">Grupo Cfe</a>
   </div>
   <div class="collapse navbar-collapse navbar-ex1-collapse colors">
     <ul class="nav navbar-nav">
-      <li><a href="#">Inicio</a></li>	
+      <li><a href="#">Inicio</a></li> 
       <li><a href="#">Nosotros</a></li>
       <li><a href="#">Servicios</a></li>
       <li><a href="#">Articulos</a></li>
@@ -22,21 +23,21 @@
   </div>
 </nav>
 <div  class="div">
-	<div>
-		<h1>Zona de descargas</h1>
-		<h2>Introduce tus datos para iniciar la descarga</h2>
-	</div>
-	<div class="form-group">
+  <div>
+    <h1>Zona de descargas</h1>
+    <h2>Introduce tus datos para iniciar la descarga</h2>
+  </div>
+  <div class="form-group">
     <?php 
-    echo form_open("/codigocontroller/recibirDatos");?>
+    echo form_open("/informacion_controller/datosUsuario");?>
          <div class="form-group">
               <label for="nombre" class="control-label">Nombre</label>
               <input class="form-control input" required id="nombre" name="nombre" placeholder="Nombre" type="text" value="<?php echo set_value('nombre'); ?>" />
               <span class="text-danger"><?php echo form_error('nombre'); ?></span>
          </div>
          <div class="form-group">
-         		<label for="correo" class="control-label">Correo</label>
-         		<input class="form-control input"required id="correo" name="correo" placeholder="Correo" type="email" value="<?php echo set_value('correo'); ?>" />
+            <label for="correo" class="control-label">Correo</label>
+            <input class="form-control input"required id="correo" name="correo" placeholder="Correo" type="email" value="<?php echo set_value('correo'); ?>" />
               <span class="text-danger"><?php echo form_error('correo'); ?></span>
          </div>
          <div class="form-group">
@@ -70,12 +71,13 @@
     <?php echo form_close(); ?>
   </div>
 </div>
-<div align="center"class="div2"><img src="http://localhost/CodeIgniter/images/download.png" alt="Mountain View" style="width:300px;height:300px;margin-top:94px;
+<div align="center"class="div2"><img src="http://localhost/Grupocfe/images/download.png" alt="Mountain View" style="width:300px;height:300px;margin-top:94px;
   margin-left:182px"></div>
 <div id="footers">
     Powered by <a href="http://www.lumationservices.com">Lumation Services LLC.</a>
  </div>
- <style type="text/css">
+</body>
+<style type="text/css">
  .colbox {
   margin-left: 0px;
   margin-right: 0px;
@@ -92,37 +94,35 @@
   padding: 20px 0px 0px 0px;
   box-shadow: 0 0 5px 1px #888888;
   margin-top: 300px;
-	}
-	.input{
+  }
+  .input{
   height: 30px;
   padding: 2px 5px;
   width: 625px;
   font-size: 12px;
   line-height: 1.5; /* Para que no ocupe toda la pagina el input. */
   border-radius: 3px;
-	}	
-	.colors{
-		margin-top: 20px;
-	}
+  } 
+  .colors{
+    margin-top: 20px;
+  }
 
-	.div{
-		margin-top: auto;
-		margin-left: 100px;
-		width: 600px;
-		height: 500px;
-		float: left;
-	}
-	.div2{
-		margin-bottom: 100px;
-		margin-top: auto;
-		width: 400px;
-		float: left;
-	}
-
-	#left{
-		float: left;
-	}
-
+  .div{
+    margin-top: auto;
+    margin-left: 100px;
+    width: 600px;
+    height: 500px;
+    float: left;
+  }
+  .div2{
+    margin-bottom: 100px;
+    margin-top: auto;
+    width: 400px;
+    float: left;
+  }
+  .body{
+    width: 100%;
+  }
   .container{
     height: auto;
   }
